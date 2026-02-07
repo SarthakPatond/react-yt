@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Gilroy";
+  padding: 20px;
+  background-color: #c8c6c6;
+}
+.parent{
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 3vh;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* flexwrap: wrap; */
+  /* flexwrap */
+  /* width: 100vh; */
+}
+.card {
+  background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+  border-radius: 16px;
+  padding: 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid #eef0f3;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    0 12px 32px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    0 20px 48px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- TOP ---------- */
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #fff;
+  padding: 6px;
+  border: 1px solid #eaecef;
+}
+
+.card .top button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #e6e8ec;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card .top button:hover {
+  background: #f5f7fa;
+  border-color: #d8dde6;
+}
+
+/* ---------- CENTER ---------- */
+.card .center h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .center h3 span {
+  font-size: 12px;
+  color: #9aa0a6;
+  font-weight: 400;
+}
+
+.card .center h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.card .center div {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.card .center h4 {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+}
+
+/* ---------- BOTTOM ---------- */
+.card .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  border-top: 1px solid #eef0f3;
+}
+
+.card .bottom h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.card .bottom p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.card .bottom button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  transition: all 0.25s ease;
+}
+
+.card .bottom button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.4);
+}
+
+/* ---------- ICON ---------- */
+.card svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 420px) {
+  .card {
+    width: 100%;
+  }
+}
